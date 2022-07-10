@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+.btn {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+// css arrow slider banner
+.banner {
+  .slider-banner {
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      z-index: 100;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.5s linear;
+      visibility: hidden;
+      &:hover {
+        border: none;
+        background: #ffc600;
+      }
+    }
+    .prev-arrow {
+      left: 1%;
+    }
+    .next-arrow {
+      right: 1%;
+    }
+  }
+  &:hover .arrow {
+    visibility: visible;
+    opacity: 1;
+  }
+  &:hover .prev-arrow {
+    left: 2%;
+  }
+  &:hover .next-arrow {
+    right: 2%;
+  }
+}
+// css arrow slider category
+.slider-category {
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #557494;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 200;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    &:hover {
+      background: #ffc600;
+    }
+  }
+  .prev-arrow {
+    left: -30px;
+  }
+  .next-arrow {
+    right: -30px;
+  }
+}
+// css arrow slider courses
+
+.courses-list {
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 5px;
+    position: absolute;
+    top: -140px;
+    right: 0;
+    color: black;
+    border: 1px solid #a9a9a9;
+    z-index: 200;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    &:hover {
+      background: #ffc600;
+      border-color: #ffc600;
+    }
+  }
+  .prev-arrow {
+    right: 60px;
+  }
+}
+// css dots banner feedback
+.feedback-list {
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    button {
+      font-size: 0;
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+      background: #e3e3e3;
+    }
+    .slick-active {
+      button {
+        background: #ffc600;
+      }
+    }
+  }
+}

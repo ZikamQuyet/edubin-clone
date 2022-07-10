@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind v2.2.19 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- slick css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- header-top -->
+      <div class="text-sm py-[15px] w-full bg-primary items-center lg:flex">
+        <div
+          class="flex justify-center container sm:container-full lg:container lg:justify-between text-[#c6c6c6] font-medium"
+        >
+          <!--contact  -->
+          <div class="hidden lg:flex gap-5">
+            <!-- mail -->
+            <a href="#" class="flex items-center group">
+              <i class="fa-solid fa-envelope mr-2.5"></i>
+              <span class="group-hover:text-secondary">info@yourmail.com</span>
+            </a>
+            <!-- phone -->
+            <span class="flex items-center">
+              <i class="fa-solid fa-phone mr-2.5"></i>
+              <span>+0123-456-5678</span>
+            </span>
+          </div>
+          <!-- social & login/register -->
+          <div class="flex">
+            <!-- social -->
+            <div class="flex gap-[10px]">
+              <span class="hidden lg:inline-block">Follow Us:</span>
+              <ul class="flex gap-[10px]">
+                <li>
+                  <a href="#"
+                    ><i class="fa-brands fa-facebook-f hover:text-secondary"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-brands fa-youtube hover:text-secondary"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-brands fa-twitter hover:text-secondary"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-brands fa-instagram hover:text-secondary"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-linkedin-in hover:text-secondary"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- login/register -->
+            <div>
+              <a href="#" class="ml-[25px] text-secondary hover:text-[#c6c6c6]"
+                >Login</a
+              >
+              <span class="mx-[12px] text-secondary">/</span>
+              <a href="#" class="text-secondary hover:text-[#c6c6c6]"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav -->
+      <div class="w-full bg-white z-[100] lg:static">
+        <nav
+          class="container sm:container-full lg:container flex justify-between items-center relative"
+        >
+          <!-- logo -->
+          <div class="w-[180px]">
+            <a href="index.html">
+              <img
+                src="assets/image/logo.png"
+                alt="logo website"
+                class="w-full"
+              />
+            </a>
+          </div>
+          <!-- links -->
+          <div class="flex justify-between items-center">
+            <!-- link menu -->
+            <!-- add class hidden -->
+            <ul
+              class="hidden lg:flex flex-col absolute top-[100%] left-0 w-full lg:flex-row z-[100] lg:static"
+            >
+              <!-- Home -->
+              <li
+                class="container sm:container-full lg:!px-[10x] lg:relative bg-white group"
+              >
+                <a
+                  href="index.html"
+                  class="flex justify-between items-center py-[15px] relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:hover:text-secondary lg:py-7 lg:text-primary lg:font-semibold lg:uppercase lg:gap-[10px] lg:before:content-none"
+                >
+                  <span>Home</span>
+                  <button class="inline-block">
+                    <!-- swap-icon -->
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                </a>
+                <!-- menu child -->
+                <!-- add class hidden -->
+                <ul
+                  class="menu-child transition-all ease-linear duration-250 lg:block lg:absolute lg:top-[110%] lg:w-[180px] lg:opacity-0 lg:invisible lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:right-0 lg:before:h-[2px] lg:before:bg-secondary lg:before:z-[1000] lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:top-[100%] lg:bg-white"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>All Home Demos</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Courses -->
+              <li
+                class="container sm:container-full lg:!px-[10px] lg:relative bg-white group"
+              >
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-[15px] relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:hover:text-secondary lg:py-7 lg:text-primary lg:font-semibold lg:uppercase lg:gap-[10px] lg:before:content-none"
+                >
+                  <span>Courses</span>
+                  <button class="inline-block">
+                    <!-- swap-icon -->
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                </a>
+                <!-- menu child -->
+                <!-- add class hidden -->
+                <ul
+                  class="menu-child transition-all ease-linear duration-250 lg:block lg:absolute lg:top-[110%] lg:w-[200px] lg:opacity-0 lg:invisible lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:right-0 lg:before:h-[2px] lg:before:bg-secondary lg:before:z-[1000] lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:top-[100%] lg:bg-white"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Course Grid Variations</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Advanced Course Filter</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Membership Levels</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>LearnPress Profile</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Become an Instructor</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Paid Type Course</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Free Type Course</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Pages -->
+              <li
+                class="container sm:container-full lg:!px-[10px] lg:relative bg-white group"
+              >
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-[15px] relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:hover:text-secondary lg:py-7 lg:text-primary lg:font-semibold lg:uppercase lg:gap-[10px] lg:before:content-none"
+                >
+                  <span>Pages</span>
+                  <button class="inline-block">
+                    <!-- swap-icon -->
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                </a>
+                <!-- menu child -->
+                <!-- add class hidden -->
+                <ul
+                  class="menu-child transition-all ease-linear duration-250 lg:block lg:absolute lg:top-[110%] lg:w-[180px] lg:opacity-0 lg:invisible lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:right-0 lg:before:h-[2px] lg:before:bg-secondary lg:before:z-[1000] lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:top-[100%] lg:bg-white"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>About Us</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Pricing Table</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Teachers</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>404 Page</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>FAQs</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Events -->
+              <li
+                class="container sm:container-full lg:!px-[10px] lg:relative bg-white group"
+              >
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-[15px] relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:hover:text-secondary lg:py-7 lg:text-primary lg:font-semibold lg:uppercase lg:gap-[10px] lg:before:content-none"
+                >
+                  <span>Events</span>
+                  <button class="inline-block">
+                    <!-- swap-icon -->
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                </a>
+                <!-- menu child -->
+                <!-- add class hidden -->
+                <ul
+                  class="menu-child transition-all ease-linear duration-250 lg:block lg:absolute lg:top-[110%] lg:w-[180px] lg:opacity-0 lg:invisible lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:right-0 lg:before:h-[2px] lg:before:bg-secondary lg:before:z-[1000] lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:top-[100%] lg:bg-white"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Events Archive</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Events Grid</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Single Events 1</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Single Events 2</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Blog -->
+              <li
+                class="container sm:container-full lg:!px-[10px] lg:relative bg-white group"
+              >
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-[15px] relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:hover:text-secondary lg:py-7 lg:text-primary lg:font-semibold lg:uppercase lg:gap-[10px] lg:before:content-none"
+                >
+                  <span>Blog</span>
+                  <button class="inline-block">
+                    <!-- swap-icon -->
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                </a>
+                <!-- menu child -->
+                <!-- add class hidden -->
+                <ul
+                  class="menu-child transition-all ease-linear duration-250 lg:block lg:absolute lg:top-[110%] lg:w-[180px] lg:opacity-0 lg:invisible lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:right-0 lg:before:h-[2px] lg:before:bg-secondary lg:before:z-[1000] lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:top-[100%] lg:bg-white"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Blog Lists</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Blog Grid</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Blog Single</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Shop -->
+              <li
+                class="container sm:container-full lg:!px-[10px] lg:relative bg-white group"
+              >
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-[15px] relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:hover:text-secondary lg:py-7 lg:text-primary lg:font-semibold lg:uppercase lg:gap-[10px] lg:before:content-none"
+                >
+                  <span>Shop</span>
+                  <button class="inline-block">
+                    <!-- swap-icon -->
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                </a>
+                <!-- menu child -->
+                <!-- add class hidden -->
+                <ul
+                  class="menu-child transition-all ease-linear duration-250 lg:block lg:absolute lg:top-[110%] lg:w-[180px] lg:opacity-0 lg:invisible lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:right-0 lg:before:h-[2px] lg:before:bg-secondary lg:before:z-[1000] lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:top-[100%] lg:bg-white"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Book Shop</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block ml-7 py-[15px] relative transition-all ease-linear duration-250 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:before:content-none lg:ml-0 lg:px-[15px] lg:font-semibold lg:text-[#7b7b7b] lg:after:content-[''] lg:after:absolute lg:after:top-2/4 lg:after:left-[0] lg:after:-translate-y-2/4 lg:after:h-[2px] lg:after:w-[10px] lg:after:bg-secondary lg:after:z-[1000] lg:after:opacity-0 lg:hover:translate-x-[10px] lg:hover:after:translate-x-[3px] lg:hover:after:opacity-100"
+                    >
+                      <span>Shop Single</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Contact -->
+              <li
+                class="container sm:container-full lg:!px-[10px] lg:relative bg-white group"
+              >
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-[15px] relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-[#000] lg:hover:text-secondary lg:py-7 lg:text-primary lg:font-semibold lg:uppercase lg:gap-[10px] lg:before:content-none"
+                >
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+            <!-- btn-menu -->
+            <div class="block lg:hidden mr-5 py-[26px] text-2xl">
+              <button>
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+            <!-- btn-search btn-cart-->
+            <div>
+              <ul class="flex gap-5 text-primary">
+                <!-- btn-search -->
+                <li>
+                  <a href="" class="text-base lg:text-lg">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <!-- modal search -->
+                  <!-- toggle class hidden -->
+                  <div
+                    class="hidden fixed top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-60"
+                  >
+                    <!-- close-modal -->
+                    <div
+                      class="absolute top-10 right-10 text-white text-3xl lg:text-5xl cursor-pointer"
+                    >
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <!-- input-search-modal -->
+                    <form
+                      action=""
+                      class="w-full h-full flex justify-center items-center"
+                    >
+                      <div class="w-[80%] lg:w-[50%] relative">
+                        <input
+                          type="text"
+                          placeholder="Search by keyword"
+                          class="w-full rounded-full px-3 text-primary border-2 border-primary focus:border-primary focus:ring-0"
+                        />
+                        <button
+                          class="absolute right-4 top-[50%] -translate-y-[50%]"
+                        >
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <!-- btn-cart -->
+                <li>
+                  <a href="" class="text-base lg:text-lg relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- total products -->
+                    <span
+                      class="absolute text-white text-xs top-[-5px] right-[-10px] px-[4px] rounded-full bg-secondary"
+                      >0</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- banner -->
+    <section
+      style="background-image: url('assets/image/news_image_3.jpeg')"
+      class="relative bg-no-repeat bg-cover bg-center before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary before:opacity-70"
+    >
+      <div class="container py-[100px] text-white relative">
+        <h2 class="mb-[30px] text-[40px] font-bold">Student Register</h2>
+        <div class="text-lg">
+          <a href="#">Home</a>
+          <span class="px-[10px]">/</span>
+          <span>Student Registration</span>
+        </div>
+      </div>
+    </section>
+    <!-- register -->
+    <section>
+      <div class="bg-[#edf0f2] py-[100px]">
+        <div class="container md:container-full lg:container">
+          <form action="" class="bg-white px-[50px] py-[70px]">
+            <div
+              class="grid grid-cols-1 grid-rows-6 gap-[30px] md:grid-cols-12 md:grid-rows-3"
+            >
+              <!-- first-name -->
+              <div
+                class="relative flex flex-col col-span-1 row-span-1 row-span-1 md:col-span-6 md:row-span-1"
+              >
+                <label for="first-name" class="font-semibold mb-[15px]"
+                  >First Name</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    name=""
+                    id="first-name"
+                    class="w-full font-medium p-[15px] border-[#ddd] focus:border-[#ddd] focus:ring-0"
+                    placeholder="First Name"
+                  />
+                  <small
+                    class="hidden absolute left-0 bottom-[-25px] pt-[10px] text-red-600 italic"
+                  >
+                    lỗi
+                  </small>
+                </div>
+              </div>
+              <!-- Last-Name -->
+              <div
+                class="relative flex flex-col col-span-1 row-span-1 md:col-span-6 md:row-span-1"
+              >
+                <label for="last-name" class="font-semibold mb-[15px]"
+                  >Last Name</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    name=""
+                    id="last-name"
+                    class="w-full font-medium p-[15px] border-[#ddd] focus:border-[#ddd] focus:ring-0"
+                    placeholder="Last Name"
+                  />
+                  <small
+                    class="hidden absolute left-0 bottom-[-25px] pt-[10px] text-red-600 italic"
+                  >
+                    lỗi
+                  </small>
+                </div>
+              </div>
+              <!-- User-Name -->
+              <div
+                class="relative flex flex-col col-span-1 row-span-1 md:col-span-6 md:row-span-1"
+              >
+                <label for="user-name" class="font-semibold mb-[15px]"
+                  >User Name</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    name=""
+                    id="user-name"
+                    class="w-full font-medium p-[15px] border-[#ddd] focus:border-[#ddd] focus:ring-0"
+                    placeholder="User Name"
+                  />
+                  <small
+                    class="hidden absolute left-0 bottom-[-25px] pt-[10px] text-red-600 italic"
+                  >
+                    lỗi
+                  </small>
+                </div>
+              </div>
+              <!-- E-Mail -->
+              <div
+                class="relative flex flex-col col-span-1 row-span-1 md:col-span-6 md:row-span-1"
+              >
+                <label for="email" class="font-semibold mb-[15px]"
+                  >E-Mail</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    name=""
+                    id="email"
+                    class="w-full font-medium p-[15px] border-[#ddd] focus:border-[#ddd] focus:ring-0"
+                    placeholder="E-Mail"
+                  />
+                  <small
+                    class="hidden absolute left-0 bottom-[-25px] pt-[10px] text-red-600 italic"
+                  >
+                    lỗi
+                  </small>
+                </div>
+              </div>
+              <!-- Password -->
+              <div
+                class="relative flex flex-col col-span-1 row-span-1 md:col-span-6 md:row-span-1"
+              >
+                <label for="password" class="font-semibold mb-[15px]"
+                  >Password</label
+                >
+                <div class="relative">
+                  <input
+                    type="password"
+                    name=""
+                    id="password"
+                    class="w-full font-medium p-[15px] border-[#ddd] focus:border-[#ddd] focus:ring-0"
+                    placeholder="Password"
+                  />
+                  <i
+                    class="show-password-1 fa-solid fa-eye cursor-pointer absolute top-2/4 -translate-y-2/4 right-[10px]"
+                  ></i>
+                  <small
+                    class="hidden absolute left-0 bottom-[-25px] pt-[10px] text-red-600 italic"
+                  >
+                    lỗi
+                  </small>
+                </div>
+              </div>
+              <!-- Password-Confirmation -->
+              <div
+                class="relative flex flex-col col-span-1 row-span-1 md:col-span-6 md:row-span-1"
+              >
+                <label
+                  for="password-confirmation"
+                  class="font-semibold mb-[15px]"
+                  >Password Confirmation</label
+                >
+                <div class="relative">
+                  <input
+                    type="password"
+                    name=""
+                    id="password-confirmation"
+                    class="w-full font-medium p-[15px] border-[#ddd] focus:border-[#ddd] focus:ring-0"
+                    placeholder="Password Confirmation"
+                  />
+                  <i
+                    class="show-password-2 fa-solid fa-eye cursor-pointer absolute top-2/4 -translate-y-2/4 right-[10px]"
+                  ></i>
+                  <small
+                    class="hidden absolute left-0 bottom-[-25px] pt-[10px] text-red-600 italic"
+                  >
+                    lỗi
+                  </small>
+                </div>
+              </div>
+              <!-- btn-register -->
+              <div class="col-span-1 md:col-span-12 text-right">
+                <button
+                  type="submit"
+                  class="btn inline-block px-[30px] py-[17px] text-white bg-primary rounded-[3px] font-semibold hover:bg-secondary hover:text-primary transition-all ease-linear duration-250"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- top footer -->
+      <div class="pb-[20px] pt-[70px] bg-primary">
+        <div class="container">
+          <div
+            class="grid grid-rows-4 md:grid-cols-2 md:grid-rows-2 md:gap-x-[40px] lg:grid-cols-12 lg:grid-rows-none lg:gap-x-[30px]"
+          >
+            <!-- footer-about -->
+            <div class="mb-[60px] row-span-1 lg:col-span-4">
+              <div class="w-[180px] h-[50px] mb-[30px]">
+                <a href="index.html">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="assets/image/logo_w.png"
+                    alt="logo-web"
+                  />
+                </a>
+              </div>
+              <p class="text-white mb-[20px]">
+                Edubin perfect for online courses and other institutes. It’s a
+                complete solution with lms features and functionalities.
+              </p>
+              <!-- Social  -->
+              <ul class="flex gap-[10px]">
+                <li>
+                  <a
+                    href="#"
+                    class="flex justify-center items-center h-[40px] w-[40px] rounded-full text-white bg-[#021d3a] hover:scale-90 hover:text-secondary transition-all ease-linear duration-250"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex justify-center items-center h-[40px] w-[40px] rounded-full text-white bg-[#021d3a] hover:scale-90 hover:text-secondary transition-all ease-linear duration-250"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex justify-center items-center h-[40px] w-[40px] rounded-full text-white bg-[#021d3a] hover:scale-90 hover:text-secondary transition-all ease-linear duration-250"
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex justify-center items-center h-[40px] w-[40px] rounded-full text-white bg-[#021d3a] hover:scale-90 hover:text-secondary transition-all ease-linear duration-250"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Feature-Links -->
+            <div class="mb-[40px] row-span-1 lg:col-span-3">
+              <h2 class="text-white text-lg font-semibold mb-[40px]">
+                Feature Links
+              </h2>
+              <div class="flex">
+                <ul class="w-[50%]">
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Graduation
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Scholarship
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Result
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                </ul>
+                <!--  -->
+                <ul class="w-[50%]">
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Admissions
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      International
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Teachers
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Alumni
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Events
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Support -->
+            <div class="mb-[40px] row-span-1 lg:col-span-2">
+              <h2 class="text-white text-lg font-bold mb-[40px]">Support</h2>
+              <div class="flex">
+                <ul>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Language
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      WordPress
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Privacy
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      FAQs
+                    </a>
+                  </li>
+                  <li class="py-[5px]">
+                    <i class="fa-solid fa-angle-right text-secondary"></i>
+                    <a
+                      href="#"
+                      class="inline-block text-white hover:text-secondary hover:ml-[5px] transition-all ease-linear duration-250"
+                    >
+                      Support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Contact-us -->
+            <div class="mb-[40px] row-span-1 lg:col-span-3">
+              <h2 class="text-white text-lg font-bold mb-[40px]">Support</h2>
+              <p class="text-white mb-[24px]">
+                203, Envato Labs, Behind Alis Steet, Melbourne, Australia.
+              </p>
+              <ul>
+                <li class="text-white">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="ml-[10px]">+1 23-4567-8920</span>
+                </li>
+                <li class="text-white">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span class="ml-[10px]">info@yourmail.com</span>
+                </li>
+                <li class="text-white">
+                  <i class="fa-solid fa-globe"></i>
+                  <span class="ml-[10px]">www.yourdomain.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom footer -->
+      <div class="bg-[#021d3a]">
+        <div class="container">
+          <div class="py-[25px] flex justify-center md:justify-between">
+            <div>
+              <p class="text-white">© 2022 Pixelcurve. All rights reserved.</p>
+            </div>
+            <div class="hidden md:block">
+              <nav>
+                <ul class="flex gap-x-[15px]">
+                  <li
+                    class="relative text-white before:content-['|'] before:text-white before:absolute before:-right-[10px] transition-all ease-linear duration-250 hover:text-secondary"
+                  >
+                    <a href="#">Language</a>
+                  </li>
+                  <li
+                    class="relative text-white before:content-['|'] before:text-white before:absolute before:-right-[10px] transition-all ease-linear duration-250 hover:text-secondary"
+                  >
+                    <a href="#">WordPress</a>
+                  </li>
+                  <li
+                    class="relative text-white before:content-['|'] before:text-white before:absolute before:-right-[10px] transition-all ease-linear duration-250 hover:text-secondary"
+                  >
+                    <a href="#">Privacy</a>
+                  </li>
+                  <li
+                    class="relative text-white before:content-['|'] before:text-white before:absolute before:-right-[10px] transition-all ease-linear duration-250 hover:text-secondary"
+                  >
+                    <a href="#">FAQs</a>
+                  </li>
+                  <li
+                    class="relative text-white transition-all ease-linear duration-250 hover:text-secondary"
+                  >
+                    <a href="#">Support</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "576px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1200px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1200px",
+            // => @media (min-width: 1536px) { ... }
+          },
+          extend: {
+            colors: {
+              primary: "#07294d",
+              secondary: "#ffc600",
+            },
+          },
+          container: {
+            center: true,
+            padding: "15px",
+            screens: {
+              sm: "576px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1170px",
+              "2xl": "1170px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .container-full {
+          max-width: 100%;
+          padding: 0 15px;
+        }
+      }
+    </style>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- slick -->
+    <!-- file js -->
+    <script src="register.js"></script>
+  </body>
+</html>
