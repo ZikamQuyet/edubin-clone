@@ -256,6 +256,7 @@ const renderCourses = (courses) => {
                         <i
                         class="fa-solid fa-cart-plus text-secondary mr-[5px] "
                         ></i>
+                        <span class="text-[#8a8a8a] font-bold hover:text-secondary transition-all ease-linear duration-250 ">Get Enrolled</span>
                     </button>
                     </div>
                 </div>
@@ -300,12 +301,25 @@ const renderCourses = (courses) => {
     }
 }
 
-const handleSliderMenu=(ele)=>{
+const handleSliderMenu = (ele) => {
     $(ele).slideToggle();
 }
-
+const handleSearch = () => {
+    const btnSearch = document.querySelector(".btn-search");
+    const modalSearch = document.querySelector(".modal-search");
+    const btnCloseSearch = document.querySelector(".btn-close-search");
+    const txtSearch = document.querySelector(".txt-search");
+    btnSearch.addEventListener("click", () => {
+        modalSearch.classList.remove("hidden");
+        txtSearch.focus();
+    });
+    btnCloseSearch.addEventListener("click", () => {
+        modalSearch.classList.add("hidden");
+    })
+}
 window.onload = () => {
     getCourses();
+    handleSearch();
 }
 
 

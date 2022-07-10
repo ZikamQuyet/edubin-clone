@@ -512,17 +512,17 @@
               <ul class="flex gap-5 text-primary">
                 <!-- btn-search -->
                 <li>
-                  <a href="" class="text-base lg:text-lg">
+                  <span class="btn-search cursor-pointer text-base lg:text-lg">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                  </a>
+                  </span>
                   <!-- modal search -->
                   <!-- toggle class hidden -->
                   <div
-                    class="hidden fixed top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-60"
+                    class="modal-search hidden fixed top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-60 z-[1000]"
                   >
                     <!-- close-modal -->
                     <div
-                      class="absolute top-10 right-10 text-white text-3xl lg:text-5xl cursor-pointer"
+                      class="btn-close-search absolute top-10 right-10 text-white text-3xl lg:text-5xl cursor-pointer"
                     >
                       <i class="fa-solid fa-xmark"></i>
                     </div>
@@ -535,7 +535,7 @@
                         <input
                           type="text"
                           placeholder="Search by keyword"
-                          class="w-full rounded-full px-3 text-primary border-2 border-primary focus:border-primary focus:ring-0"
+                          class="txt-search w-full rounded-full px-3 text-primary border-2 border-primary focus:border-primary focus:ring-0"
                         />
                         <button
                           class="absolute right-4 top-[50%] -translate-y-[50%]"
@@ -548,7 +548,7 @@
                 </li>
                 <!-- btn-cart -->
                 <li>
-                  <a href="" class="text-base lg:text-lg relative">
+                  <a href="#" class="text-base lg:text-lg relative">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <!-- total products -->
                     <span
