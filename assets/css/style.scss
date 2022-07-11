@@ -13,6 +13,22 @@ button,
   font-family: "Montserrat", sans-serif !important;
 }
 
+// effect scroll fixed menu
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  animation: effectMenu linear 0.25s;
+}
+@keyframes effectMenu {
+  from {
+    opacity: 0;
+    top: -20px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
 // css arrow slider banner
 .banner {
   .slider-banner {
@@ -100,7 +116,7 @@ button,
     right: 0;
     color: black;
     border: 1px solid #a9a9a9;
-    z-index: 200;
+    z-index: 5;
     cursor: pointer;
     transition: all 0.5s linear;
     &:hover {

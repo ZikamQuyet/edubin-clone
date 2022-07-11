@@ -13,6 +13,34 @@ button,
   font-family: "Montserrat", sans-serif !important;
 }
 
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  -webkit-animation: effectMenu linear 0.25s;
+          animation: effectMenu linear 0.25s;
+}
+
+@-webkit-keyframes effectMenu {
+  from {
+    opacity: 0;
+    top: -20px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes effectMenu {
+  from {
+    opacity: 0;
+    top: -20px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
 .banner .slider-banner .arrow {
   display: flex;
   justify-content: center;
@@ -91,7 +119,7 @@ button,
   right: 0;
   color: black;
   border: 1px solid #a9a9a9;
-  z-index: 200;
+  z-index: 5;
   cursor: pointer;
   transition: all 0.5s linear;
 }
